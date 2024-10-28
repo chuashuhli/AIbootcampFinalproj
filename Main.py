@@ -1,7 +1,5 @@
 import streamlit as st
 from helper_functions import llm # <--- This is the helper function that we have created 🆕
-from utility import check_password
-
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
@@ -9,9 +7,6 @@ st.set_page_config(
     page_title="The Social Assistance Care App",
     page_icon="🐻"
 )
-
-if not check_password():  
-    st.stop()
 
 # endregion <--------- Streamlit App Configuration --------->
 
